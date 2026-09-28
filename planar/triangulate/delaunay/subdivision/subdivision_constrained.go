@@ -8,12 +8,12 @@ import (
 	"strings"
 
 	"github.com/gdey/errors"
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/internal/debugger"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/quadedge"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/subdivision/pseudopolygon"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/internal/debugger"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/quadedge"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/subdivision/pseudopolygon"
+	"github.com/alexeydott/geom/winding"
 )
 
 func roundGeomPoint(pt geom.Point) geom.Point {

@@ -3,10 +3,10 @@ package subdivision
 import (
 	"testing"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/planar"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/quadedge"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/planar"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/quadedge"
 )
 
 func dumpSD(t *testing.T, sd *Subdivision) {

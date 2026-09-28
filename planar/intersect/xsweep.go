@@ -6,9 +6,9 @@ import (
 	"log"
 	"sort"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/cmp"
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/cmp"
+	"github.com/alexeydott/geom/planar"
 )
 
 // ErrStopIteration is used to stop the iteration.
@@ -59,7 +59,11 @@ func (eq EventQueue) Less(i, j int) bool {
 	if eq.events[i].edgeType != eq.events[j].edgeType {
 		return eq.events[i].edgeType < eq.events[j].edgeType
 	}
-	return pt1[1] < pt2[1]
+	if pt1[1] != pt2[1] {
+		return pt1[1] < pt2[1]
+	}
+	// Equal endpoints must have deterministic ordering across sort versions.
+	return eq.events[i].edge < eq.events[j].edge
 }
 
 // Ref: http://geomalgorithms.com/a09-_intersect-3.html#simple_Polygon()

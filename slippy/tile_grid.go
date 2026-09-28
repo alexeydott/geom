@@ -3,8 +3,8 @@ package slippy
 import (
 	"fmt"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/proj"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/proj"
 )
 
 // TileGridder contains the tile layout, including ability to get WGS84 coordinates for tile extents

@@ -10,10 +10,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/internal/test/must"
-	"github.com/go-spatial/geom/planar"
-	"github.com/go-spatial/geom/planar/makevalid/hitmap"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/internal/test/must"
+	"github.com/alexeydott/geom/planar"
+	"github.com/alexeydott/geom/planar/makevalid/hitmap"
 )
 
 // makevalidCases encapsulates the various parts of the Tegola make valid algorithm

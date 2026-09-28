@@ -6,7 +6,7 @@ The first step should be to create the Fuzz program:
 
 ```go
 
-go-fuzz-build github.com/go-spatial/geom/encoding/wkb/internal/fuzz
+go-fuzz-build github.com/alexeydott/geom/encoding/wkb/internal/fuzz
 
 ```
 

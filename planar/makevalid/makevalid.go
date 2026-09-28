@@ -6,15 +6,15 @@ import (
 	"log"
 	"sort"
 
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/winding"
 
-	"github.com/go-spatial/geom"
-	pkgcmp "github.com/go-spatial/geom/cmp"
-	"github.com/go-spatial/geom/planar"
-	"github.com/go-spatial/geom/planar/intersect"
-	"github.com/go-spatial/geom/planar/makevalid/hitmap"
-	"github.com/go-spatial/geom/planar/makevalid/walker"
+	"github.com/alexeydott/geom"
+	pkgcmp "github.com/alexeydott/geom/cmp"
+	"github.com/alexeydott/geom/planar"
+	"github.com/alexeydott/geom/planar/intersect"
+	"github.com/alexeydott/geom/planar/makevalid/hitmap"
+	"github.com/alexeydott/geom/planar/makevalid/walker"
 )
 
 type Makevalid struct {

@@ -6,11 +6,10 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/arolek/p"
-	"github.com/go-spatial/geom"
-	vectorTile "github.com/go-spatial/geom/encoding/mvt/vector_tile"
-	"github.com/go-spatial/geom/winding"
-	"github.com/golang/protobuf/proto"
+	"github.com/alexeydott/geom"
+	vectorTile "github.com/alexeydott/geom/encoding/mvt/vector_tile"
+	"github.com/alexeydott/geom/winding"
+	"google.golang.org/protobuf/proto"
 )
 
 // TileGeomCollection returns all geometries in a tile
@@ -62,7 +61,8 @@ func DecodeByte(b []byte) (*Tile, error) {
 
 func decodeLayer(pb *vectorTile.Tile_Layer, dst *Layer) error {
 	dst.Name = *pb.Name
-	dst.extent = p.Int(int(*pb.Extent))
+	extent := int(*pb.Extent)
+	dst.extent = &extent
 
 	dst.features = make([]Feature, len(pb.Features))
 

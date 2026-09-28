@@ -3,9 +3,9 @@ package geom_test
 import (
 	"testing"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 
-	cmppkg "github.com/go-spatial/geom/cmp"
+	cmppkg "github.com/alexeydott/geom/cmp"
 )
 
 func TestCircleFromPoints(t *testing.T) {

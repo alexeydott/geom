@@ -1,7 +1,7 @@
 package cmp
 
 import (
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 func IsEmptyPoint(pt [2]float64) bool {

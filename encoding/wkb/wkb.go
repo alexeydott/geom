@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkb/internal/consts"
-	"github.com/go-spatial/geom/encoding/wkb/internal/decode"
-	"github.com/go-spatial/geom/encoding/wkb/internal/encode"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkb/internal/consts"
+	"github.com/alexeydott/geom/encoding/wkb/internal/decode"
+	"github.com/alexeydott/geom/encoding/wkb/internal/encode"
 )
 
 type ErrUnknownGeometryType struct {

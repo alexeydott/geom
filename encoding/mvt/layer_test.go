@@ -4,9 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-spatial/geom"
-	"github.com/arolek/p"
-	"github.com/go-spatial/geom/encoding/mvt"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/mvt"
 )
 
 func TestLayerAddFeatures(t *testing.T) {
@@ -54,7 +53,7 @@ func TestLayerAddFeatures(t *testing.T) {
 					Geometry: geom.Point{12.0, 15.0},
 				},
 				{
-					ID:       p.Uint64(1),
+					ID:       uint64Pointer(1),
 					Tags:     map[string]interface{}{"atag": "tag"},
 					Geometry: geom.Point{12.0, 15.0},
 				},
@@ -63,7 +62,7 @@ func TestLayerAddFeatures(t *testing.T) {
 		"nil id test 2": tcase{
 			features: []mvt.Feature{
 				{
-					ID:       p.Uint64(1),
+					ID:       uint64Pointer(1),
 					Tags:     map[string]interface{}{"atag": "tag"},
 					Geometry: geom.Point{12.0, 15.0},
 				},
@@ -76,24 +75,24 @@ func TestLayerAddFeatures(t *testing.T) {
 		"same feature test": tcase{
 			features: []mvt.Feature{
 				{
-					ID:       p.Uint64(1),
+					ID:       uint64Pointer(1),
 					Tags:     map[string]interface{}{"atag": "tag"},
 					Geometry: geom.Point{12.0, 15.0},
 				},
 				{
-					ID:       p.Uint64(1),
+					ID:       uint64Pointer(1),
 					Tags:     map[string]interface{}{"atag": "tag"},
 					Geometry: geom.Point{12.0, 15.0},
 				},
 			},
 			expected: []mvt.Feature{
 				{
-					ID:       p.Uint64(1),
+					ID:       uint64Pointer(1),
 					Tags:     map[string]interface{}{"atag": "tag"},
 					Geometry: geom.Point{12.0, 15.0},
 				},
 				{
-					ID:       p.Uint64(1),
+					ID:       uint64Pointer(1),
 					Tags:     map[string]interface{}{"atag": "tag"},
 					Geometry: geom.Point{12.0, 15.0},
 				},
@@ -102,12 +101,12 @@ func TestLayerAddFeatures(t *testing.T) {
 		"different feature test": tcase{
 			features: []mvt.Feature{
 				{
-					ID:       p.Uint64(1),
+					ID:       uint64Pointer(1),
 					Tags:     map[string]interface{}{"atag": "tag"},
 					Geometry: geom.Point{12.0, 15.0},
 				},
 				{
-					ID:       p.Uint64(2),
+					ID:       uint64Pointer(2),
 					Tags:     map[string]interface{}{"atag": "tag"},
 					Geometry: geom.Point{12.0, 15.0},
 				},
@@ -119,3 +118,5 @@ func TestLayerAddFeatures(t *testing.T) {
 		t.Run(name, fn(tc))
 	}
 }
+
+func uint64Pointer(v uint64) *uint64 { return &v }

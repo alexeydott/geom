@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkt/internal/symbol"
-	"github.com/go-spatial/geom/internal/parsing"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkt/internal/symbol"
+	"github.com/alexeydott/geom/internal/parsing"
 )
 
 type T struct {

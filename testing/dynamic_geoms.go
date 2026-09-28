@@ -3,7 +3,7 @@ package testing
 import (
 	"math"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 // BoxPolygon returns a polygon that is a box with side lengths of

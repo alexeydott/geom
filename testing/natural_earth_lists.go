@@ -1,7 +1,7 @@
 package testing
 
 import (
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 var NaturalEarthPolygons = []geom.Polygon{

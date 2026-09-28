@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/go-spatial/geom/encoding/wkb/internal/tcase/token"
+	"github.com/alexeydott/geom/encoding/wkb/internal/tcase/token"
 )
 
 var ErrMissingDesc = fmt.Errorf("missing desc field")

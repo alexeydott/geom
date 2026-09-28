@@ -3,7 +3,7 @@
 package fuzz
 
 import (
-	"github.com/go-spatial/geom/encoding/wkb"
+	"github.com/alexeydott/geom/encoding/wkb"
 )
 
 func Fuzz(data []byte) int {

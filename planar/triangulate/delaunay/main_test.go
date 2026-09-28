@@ -12,13 +12,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/cmp"
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/internal/debugger"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/quadedge"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/subdivision"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/cmp"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/internal/debugger"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/quadedge"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/subdivision"
+	"github.com/alexeydott/geom/winding"
 )
 
 func logEdges(sd *subdivision.Subdivision) {

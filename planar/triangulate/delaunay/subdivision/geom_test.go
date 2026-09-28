@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/internal/test/must"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/quadedge"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/internal/test/must"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/quadedge"
+	"github.com/alexeydott/geom/winding"
 )
 
 func TestNewSubdivisionFromGeomLines(t *testing.T) {

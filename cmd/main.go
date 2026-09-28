@@ -10,23 +10,23 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom/winding"
 
-	"github.com/go-spatial/geom/planar/clip"
+	"github.com/alexeydott/geom/planar/clip"
 
-	"github.com/go-spatial/geom/cmp"
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom/cmp"
+	"github.com/alexeydott/geom/planar"
 
-	"github.com/go-spatial/geom/planar/makevalid"
-	"github.com/go-spatial/geom/planar/makevalid/hitmap"
-	"github.com/go-spatial/geom/planar/makevalid/walker"
-	"github.com/go-spatial/geom/planar/simplify"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay"
+	"github.com/alexeydott/geom/planar/makevalid"
+	"github.com/alexeydott/geom/planar/makevalid/hitmap"
+	"github.com/alexeydott/geom/planar/makevalid/walker"
+	"github.com/alexeydott/geom/planar/simplify"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/mvt"
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/slippy"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/mvt"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/slippy"
 )
 
 var simplifyGeo = flag.Bool("simplify", true, "simplify the wkt before running makevalid")

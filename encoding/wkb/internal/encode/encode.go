@@ -5,8 +5,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkb/internal/consts"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkb/internal/consts"
 )
 
 type Encoder struct {

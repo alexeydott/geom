@@ -6,15 +6,15 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/geojson"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/geojson"
 )
 
 func TestFeatureMarshalJSON(t *testing.T) {
 	type tcase struct {
 		geom        geom.Geometry
 		expected    []byte
-		expectedErr json.MarshalerError
+		expectedErr error
 	}
 
 	fn := func(t *testing.T, tc tcase) {
@@ -25,9 +25,15 @@ func TestFeatureMarshalJSON(t *testing.T) {
 		}
 
 		output, err := json.Marshal(f)
-		if err != nil && err.Error() != tc.expectedErr.Error() {
-			t.Errorf("expected err %v got %v", tc.expectedErr.Error(), err)
-			return
+		if tc.expectedErr == nil {
+			if err != nil {
+				t.Fatalf("unexpected marshal error: %v", err)
+			}
+		} else {
+			var marshalErr *json.MarshalerError
+			if !errors.As(err, &marshalErr) || !reflect.DeepEqual(marshalErr.Err, tc.expectedErr) {
+				t.Fatalf("expected marshal cause %v, got %v", tc.expectedErr, err)
+			}
 		}
 
 		if !reflect.DeepEqual(tc.expected, output) {
@@ -106,11 +112,8 @@ func TestFeatureMarshalJSON(t *testing.T) {
 			expected: []byte(`{"type":"Feature","geometry":{"type":"GeometryCollection","geometries":[{"type":"Point","coordinates":[12.2,17.7]},{"type":"MultiPoint","coordinates":[[12.2,17.7],[13.3,18.8]]},{"type":"LineString","coordinates":[[3.2,4.3],[5.4,6.5],[7.6,8.7],[9.8,10.9]]}]},"properties":null}`),
 		},
 		"nil geom": {
-			geom: nil,
-			expectedErr: json.MarshalerError{
-				Type: reflect.TypeOf(geojson.Geometry{}),
-				Err:  geom.ErrUnknownGeometry{Geom: nil},
-			},
+			geom:        nil,
+			expectedErr: geom.ErrUnknownGeometry{Geom: nil},
 		},
 	}
 

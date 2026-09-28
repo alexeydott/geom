@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 func TestPointSSetter(t *testing.T) {

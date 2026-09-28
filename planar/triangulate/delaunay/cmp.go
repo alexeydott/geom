@@ -1,7 +1,7 @@
 package delaunay
 
 import (
-	pkg "github.com/go-spatial/geom/cmp"
+	pkg "github.com/alexeydott/geom/cmp"
 )
 
 var cmp = pkg.HiCMP

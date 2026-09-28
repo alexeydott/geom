@@ -4,7 +4,7 @@ import (
 	"log"
 	"sync"
 
-	recdr "github.com/go-spatial/geom/internal/debugger/recorder"
+	recdr "github.com/alexeydott/geom/internal/debugger/recorder"
 )
 
 type TestDescription = recdr.TestDescription

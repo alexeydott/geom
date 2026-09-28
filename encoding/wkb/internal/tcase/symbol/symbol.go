@@ -4,7 +4,7 @@ import (
 	"io"
 	"unicode"
 
-	"github.com/go-spatial/geom/internal/parsing"
+	"github.com/alexeydott/geom/internal/parsing"
 )
 
 const (

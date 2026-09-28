@@ -10,7 +10,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 // TestQuery tests a simple predefined query

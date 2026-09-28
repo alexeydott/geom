@@ -3,9 +3,9 @@ package mvt
 import (
 	"testing"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/cmp"
-	vectorTile "github.com/go-spatial/geom/encoding/mvt/vector_tile"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/cmp"
+	vectorTile "github.com/alexeydott/geom/encoding/mvt/vector_tile"
 )
 
 func TestDecode(t *testing.T) {

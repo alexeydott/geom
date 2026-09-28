@@ -2,7 +2,7 @@ package testing
 
 import (
 	"fmt"
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 var tilesWkt = []string{_ne_6_43_21, _ne_8_42_98}
@@ -16,7 +16,7 @@ var tilesCompiled []geom.Collection
 //
 //	import (
 //		gtesting "github.com/go-spatial/testing"
-//		"github.com/go-spatial/geom/encoding/wkt"
+//		"github.com/alexeydott/geom/encoding/wkt"
 //	)
 //
 //	func init {
@@ -39,13 +39,13 @@ func Tiles() []geom.Collection {
 
 // CompileTiles will compile some Natural Earth tiles so they are accessible
 // through the Tiles function. It takes a WKT decoding function which can be
-// accessible in the package github.com/go-spatial/geom/encoding/wkt as the
+// accessible in the package github.com/alexeydott/geom/encoding/wkt as the
 // function DecodeString.
 //	package my_test
 //
 //	import (
 //		gtesting "github.com/go-spatial/testing"
-//		"github.com/go-spatial/geom/encoding/wkt"
+//		"github.com/alexeydott/geom/encoding/wkt"
 //	)
 //
 //	func init {

@@ -5,8 +5,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/planar"
 )
 
 func asGeomExtent(e [4]float64) *geom.Extent {

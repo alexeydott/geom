@@ -1,4 +1,9 @@
-[![Godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://pkg.go.dev/github.com/go-spatial/geom)
+# alexeydott/geom
+
+Versioned Tegola fork of [go-spatial/geom](https://github.com/go-spatial/geom).
+See [FORK.md](FORK.md) for provenance, changes and maintenance.
+
+[![Godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://pkg.go.dev/github.com/alexeydott/geom)
 
 # Packages
 

@@ -11,7 +11,7 @@ besides endusring that compilation has already occured).
 package my_test
 
 import (
-    "github.com/go-spatial/geom/encoding/wkt"
+    "github.com/alexeydott/geom/encoding/wkt"
     gtesting "github.com/go-spatial/testing"
 )
 

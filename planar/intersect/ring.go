@@ -3,9 +3,9 @@ package intersect
 import (
 	"log"
 
-	"github.com/go-spatial/geom"
-	pkgcmp "github.com/go-spatial/geom/cmp"
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom"
+	pkgcmp "github.com/alexeydott/geom/cmp"
+	"github.com/alexeydott/geom/planar"
 )
 
 type Ring struct {

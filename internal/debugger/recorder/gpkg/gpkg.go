@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/go-spatial/geom/encoding/gpkg"
+	"github.com/alexeydott/geom/encoding/gpkg"
 
-	"github.com/go-spatial/geom/internal/debugger/recorder"
+	"github.com/alexeydott/geom/internal/debugger/recorder"
 )
 
 const (

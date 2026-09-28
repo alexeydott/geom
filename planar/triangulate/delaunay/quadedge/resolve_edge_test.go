@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/winding"
 )
 
 func TestResolveEdge(t *testing.T) {

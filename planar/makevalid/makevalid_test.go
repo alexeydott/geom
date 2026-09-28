@@ -7,13 +7,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/internal/test/must"
-	"github.com/go-spatial/geom/slippy"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/internal/test/must"
+	"github.com/alexeydott/geom/slippy"
+	"github.com/alexeydott/geom/winding"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/planar/makevalid/hitmap"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/planar/makevalid/hitmap"
 )
 
 var runAll bool
@@ -152,14 +152,10 @@ func checkMakeValid(tb testing.TB) {
 }
 
 func webMercatorTileExtent(z, x, y uint) *geom.Extent {
-	grid, err := slippy.NewGrid(3857)
+	grid := slippy.NewGrid(3857, slippy.DefaultTileSize)
+	ext, err := slippy.Extent(grid, slippy.Tile{Z: slippy.Zoom(z), X: x, Y: y})
 	if err != nil {
 		panic(err)
-	}
-
-	ext, ok := slippy.Extent(grid, slippy.NewTile(z, x, y))
-	if !ok {
-		panic("no tile")
 	}
 
 	return ext

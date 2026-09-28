@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/go-spatial/geom/testing/must"
+	"github.com/alexeydott/geom/testing/must"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkt"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkt"
 )
 
 var dumpSolution = flag.Bool("dump.solution", false, "Dump the solution to the test")

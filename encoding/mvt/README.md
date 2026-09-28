@@ -1,6 +1,6 @@
 # MVT
 
-[![GoDoc](https://godoc.org/github.com/go-spatial/geom/encoding/mvt?status.svg)](https://godoc.org/github.com/go-spatial/geom/encoding/mvt)
+[![GoDoc](https://godoc.org/github.com/alexeydott/geom/encoding/mvt?status.svg)](https://godoc.org/github.com/alexeydott/geom/encoding/mvt)
 
 This package contains functions and types for encoding a geometry in
 [Mapbox Vector Tiles](https://github.com/mapbox/vector-tile-spec). This
@@ -15,7 +15,7 @@ To encode a geometry into a tile, you need:
   * the size of the tile you want to output in pixels
 
 **note**: the geometry must not go outside the tile extent. If this is unknown,
-use the [clip package](https://godoc.org/github.com/go-spatial/geom/planar/clip#Geometry)
+use the [clip package](https://godoc.org/github.com/alexeydott/geom/planar/clip#Geometry)
 before encoding.
 
 To encode:

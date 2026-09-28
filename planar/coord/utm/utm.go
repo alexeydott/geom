@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/go-spatial/geom/planar/coord"
+	"github.com/alexeydott/geom/planar/coord"
 )
 
 const (

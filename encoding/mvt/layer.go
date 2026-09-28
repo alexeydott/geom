@@ -7,7 +7,7 @@ import (
 
 	"context"
 
-	vectorTile "github.com/go-spatial/geom/encoding/mvt/vector_tile"
+	vectorTile "github.com/alexeydott/geom/encoding/mvt/vector_tile"
 )
 
 // Layer describes a layer within a tile.
@@ -138,7 +138,9 @@ func vectorTileValue(i interface{}) *vectorTile.Tile_Value {
 		err := binary.Write(buff, binary.BigEndian, t)
 		// We are going to ignore the value and return an empty TileValue
 		if err == nil {
-			tv.XXX_unrecognized = buff.Bytes()
+			// proto v2 keeps unknown fields unexported; stash the raw bytes the
+			// way the old XXX_unrecognized field did so they survive Marshal.
+			tv.ProtoReflect().SetUnknown(buff.Bytes())
 		}
 
 	case string:

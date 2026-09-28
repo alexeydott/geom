@@ -4,9 +4,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/cmp"
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/cmp"
+	"github.com/alexeydott/geom/planar"
 )
 
 func uniqueSegmentIntersectPoints(clipbox *geom.Extent, ln geom.Line) [][2]float64 {

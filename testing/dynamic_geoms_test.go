@@ -4,9 +4,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/cmp"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/cmp"
+	"github.com/alexeydott/geom/winding"
 )
 
 func TestBoxPolygon(t *testing.T) {

@@ -3,7 +3,7 @@ package planar
 import (
 	"math/big"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 const (

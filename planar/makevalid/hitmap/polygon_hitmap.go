@@ -5,10 +5,10 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/go-spatial/geom/encoding/wkt"
+	"github.com/alexeydott/geom/encoding/wkt"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/planar"
 )
 
 // PolygonHM implements a basic hit map that gives the label for a point based on the order of the rings.

@@ -9,12 +9,12 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/go-spatial/geom/cmp"
+	"github.com/alexeydott/geom/cmp"
 
 	"github.com/gdey/errors"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkb"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkb"
 )
 
 type EnvelopeType uint8

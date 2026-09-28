@@ -4,12 +4,12 @@ import (
 	"context"
 	"log"
 
-	"github.com/go-spatial/geom/encoding/wkt"
+	"github.com/alexeydott/geom/encoding/wkt"
 
-	"github.com/go-spatial/geom/planar/triangulate/delaunay"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/planar"
 )
 
 // InsideTrianglesForSegments returns triangles that are painted as as inside triangles

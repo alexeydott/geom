@@ -4,7 +4,7 @@ package debugger
 
 import (
 	"github.com/gdey/errors"
-	rcdr "github.com/go-spatial/geom/internal/debugger/recorder"
+	rcdr "github.com/alexeydott/geom/internal/debugger/recorder"
 )
 
 func NewRecorder(_, _ string) (rcdr.Interface, string, error) {

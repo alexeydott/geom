@@ -13,8 +13,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding"
 )
 
 var (

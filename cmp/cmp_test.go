@@ -5,8 +5,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/go-spatial/geom"
-	gtesting "github.com/go-spatial/geom/testing"
+	"github.com/alexeydott/geom"
+	gtesting "github.com/alexeydott/geom/testing"
 )
 
 /*

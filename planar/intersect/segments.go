@@ -4,8 +4,8 @@ import (
 	"log"
 	"sort"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/internal/rtreego"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/internal/rtreego"
 )
 
 const smallep = 0.00001

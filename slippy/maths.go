@@ -3,7 +3,7 @@ package slippy
 import (
 	"math"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 /*

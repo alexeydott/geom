@@ -3,7 +3,7 @@ package encoding
 import (
 	"fmt"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 // ErrUnknownGeometry is returned when a geometry type that is unknown is asked

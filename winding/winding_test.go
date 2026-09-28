@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-spatial/geom/cmp"
+	"github.com/alexeydott/geom/cmp"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/testing/must"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/testing/must"
 )
 
 func TestHelperMethods(t *testing.T) {

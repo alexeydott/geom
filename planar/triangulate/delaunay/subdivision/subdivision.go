@@ -11,16 +11,16 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/planar/intersect"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/planar/intersect"
+	"github.com/alexeydott/geom/winding"
 
 	"github.com/gdey/errors"
 
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom/planar"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/quadedge"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/quadedge"
 )
 
 const RoundingFactor = 1000

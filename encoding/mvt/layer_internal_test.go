@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/go-spatial/geom"
-	vectorTile "github.com/go-spatial/geom/encoding/mvt/vector_tile"
+	"github.com/alexeydott/geom"
+	vectorTile "github.com/alexeydott/geom/encoding/mvt/vector_tile"
 )
 
 func TestLayer(t *testing.T) {

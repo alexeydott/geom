@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/cmp"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/cmp"
 )
 
 var testExtents = [...]*geom.Extent{

@@ -3,8 +3,8 @@ package planar
 import (
 	"math"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/cmp"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/cmp"
 )
 
 // Rad is the factor to go from pi to radians

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/go-spatial/geom/cmp"
+	"github.com/alexeydott/geom/cmp"
 
-	"github.com/go-spatial/geom/encoding/wkt"
+	"github.com/alexeydott/geom/encoding/wkt"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 func Read(filename string) geom.Geometry {

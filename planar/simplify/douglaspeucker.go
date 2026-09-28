@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/go-spatial/geom/planar"
+	"github.com/alexeydott/geom/planar"
 )
 
 type DouglasPeucker struct {

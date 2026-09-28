@@ -8,11 +8,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/quadedge"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/subdivision"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/quadedge"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/subdivision"
+	"github.com/alexeydott/geom/winding"
 )
 
 type GeomConstrained struct {

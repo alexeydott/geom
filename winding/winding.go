@@ -7,9 +7,9 @@ import (
 	"log"
 	"math"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/cmp"
-	"github.com/go-spatial/geom/encoding/wkt"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/cmp"
+	"github.com/alexeydott/geom/encoding/wkt"
 )
 
 // Winding is the clockwise direction of a set of points.

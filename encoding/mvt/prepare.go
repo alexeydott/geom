@@ -3,11 +3,11 @@ package mvt
 import (
 	"log"
 
-	"github.com/go-spatial/geom/cmp"
+	"github.com/alexeydott/geom/cmp"
 
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom/winding"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 // PrepareGeo converts the geometry's coordinates to tile pixel coordinates. tile should be the
@@ -129,6 +129,15 @@ func preparePolygon(g geom.Polygon, tile *geom.Extent, pixelExtent float64) (p g
 			continue
 		}
 		ln := preparelinestr(line, tile, pixelExtent)
+		if len(ln) < 2 {
+			// preparelinestr returns nil (or too few points) when the line
+			// collapses to fewer than 2 distinct points after coordinate
+			// truncation; skip it instead of indexing into an empty slice.
+			if debug {
+				log.Println("skipping line 2", line, len(ln))
+			}
+			continue
+		}
 		if cmp.HiCMP.GeomPointEqual(ln[0], ln[len(ln)-1]) {
 			// first and last is the same, need to remove the last point.
 			ln = ln[:len(ln)-1]

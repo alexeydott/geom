@@ -6,13 +6,13 @@ import (
 	"testing"
 
 	"github.com/gdey/errors"
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/internal/test/must"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/internal/test/must"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/quadedge"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/subdivision"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/quadedge"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/subdivision"
 )
 
 func TestConstraint(t *testing.T) {
@@ -180,7 +180,7 @@ func TestGeomConstrained(t *testing.T) {
 
 		{
 			/*
-				Github issue #70: https://github.com/go-spatial/geom/issues/70
+				Github issue #70: https://github.com/alexeydott/geom/issues/70
 				The main issue is one of the cutout (the one that looks like a rectangle)
 				has an extra line sticking out of it. This extra point is encoded in the
 				tile and not just a render issue. So, some how the make valid algo is adding

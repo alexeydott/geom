@@ -11,7 +11,7 @@ To encode a geometry into a tile, you need:
 
 note: the geometry must not go outside the tile extent. If this is unknown,
 use the clip package before encoding.
-(https://godoc.org/github.com/go-spatial/geom/planar/clip#Geometry)
+(https://godoc.org/github.com/alexeydott/geom/planar/clip#Geometry)
 
 
 To encode:

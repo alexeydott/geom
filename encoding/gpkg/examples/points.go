@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/gpkg"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/gpkg"
 )
 
 const (

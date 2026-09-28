@@ -3,7 +3,7 @@ package planar
 import (
 	"math"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 // PointDistance returns the euclidean distance between two points.

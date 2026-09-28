@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/go-spatial/geom/encoding/gpkg"
+	"github.com/alexeydott/geom/encoding/gpkg"
 )
 
 type Descriptioner interface {

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 func TestClosePolygon(t *testing.T) {

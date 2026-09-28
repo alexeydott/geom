@@ -3,8 +3,8 @@ package subdivision
 import (
 	"errors"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/planar/triangulate/delaunay/quadedge"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/planar/triangulate/delaunay/quadedge"
 )
 
 type Triangle struct {

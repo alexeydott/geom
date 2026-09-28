@@ -10,9 +10,9 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/spherical"
-	"github.com/go-spatial/proj"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/spherical"
+	"github.com/alexeydott/proj"
 )
 
 var (

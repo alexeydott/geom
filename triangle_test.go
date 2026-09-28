@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/go-spatial/geom"
+	"github.com/alexeydott/geom"
 )
 
 func TestNewTriangleForExtent(t *testing.T) {

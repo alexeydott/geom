@@ -4,10 +4,10 @@ import (
 	"log"
 	"math"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/encoding/wkt"
-	"github.com/go-spatial/geom/planar"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/encoding/wkt"
+	"github.com/alexeydott/geom/planar"
+	"github.com/alexeydott/geom/winding"
 )
 
 func triangulateSubRings(oPoints []geom.Point, order winding.Order) (points []geom.Point, edges []geom.Line, err error) {

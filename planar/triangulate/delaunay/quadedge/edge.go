@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/go-spatial/geom"
-	"github.com/go-spatial/geom/planar/intersect"
-	"github.com/go-spatial/geom/winding"
+	"github.com/alexeydott/geom"
+	"github.com/alexeydott/geom/planar/intersect"
+	"github.com/alexeydott/geom/winding"
 )
 
 const (
